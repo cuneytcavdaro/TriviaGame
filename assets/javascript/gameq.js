@@ -56,11 +56,7 @@ var multipleC = {
                     }
                 }
                 var total = selected.length;
-                var percent = score/total;
-
-
-                var rating = "<h1>"
-      
+                var rating = "<h1>";
                 rating+="</h1>";
                 rating+="<div>You scored " + score + "out of " + total + ".</div>";
                 $("#form").html(rating);
@@ -68,5 +64,5 @@ var multipleC = {
     };
 }, 1200000);
     clearTimeout(windowTimeout);
-    $(window).ready("load",multipleC.draw);
+   
 })
